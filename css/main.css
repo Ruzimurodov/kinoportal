@@ -1,0 +1,319 @@
+body {
+    vertical-align: middle;
+    margin: 0;
+    background: #23074d; 
+    background: -webkit-linear-gradient(to right, #23074d, #cc5333); 
+    background: linear-gradient(to right, #23074d, #cc5333); 
+}
+
+.container {
+    width: 100%;
+    max-width: 1540px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form {
+    padding: 20px 0;
+    background: #C33764;  
+    background: -webkit-linear-gradient(to right, #1D2671, #C33764);  
+    background: linear-gradient(to right, #1D2671, #C33764); 
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+.form__render-genres {
+    display: inline-block;
+    margin-right: auto;
+}
+
+.form__film-genres {
+    /* width: 200px; */
+    height: 50px;
+    padding: 5px 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form__button, .search__btn {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-weight: bold;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    border: 2px solid #15044e;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)
+}
+
+.form__button:hover, .search__btn:hover {
+    cursor: pointer;
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.search {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.search__input {
+    height: 50px;
+    padding: 0 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.render {
+    display: flex;
+    padding: 30px 0;
+}
+
+.list {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.list__item{
+    width: 30%;
+    border-radius: 10px;
+    margin: 0;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+
+.list__item-inner {
+    border: 1px solid #000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    color: #fff;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.list__img {
+    width: 100%;
+}
+
+.film-title {
+    padding: 0 10px;
+    background: -webkit-linear-gradient(#eee, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.film-text {
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.bookmark-btn {
+    background-color: #2808faf7;
+    color: #fffaf0;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);    transition: all 1.2s ease;
+}
+
+.bookmark-btn:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.bookmark-btn:active {
+    border: 3px solid #000;
+    box-shadow: 5px 3px 8px #000;
+}
+
+.bookmark-list {
+    width: 25%;
+    margin: 0;
+    padding: 0 30px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    background: #334d50;  
+    background: -webkit-linear-gradient(to right, #cbcaa5, #334d50);  
+    background: linear-gradient(to right, #cbcaa5, #334d50); 
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.bookmark-list__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 5px;
+    padding: 5px 20px;
+    background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.bookmark-list__btn {
+    background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);    color: #fffaf0;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px;
+    padding: 5px 15px;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    transition: all 2.2s ease;
+}
+
+.bookmark-list__btn:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to right,#ec8c69  0%,#ed6ea0  100%);
+}
+
+.bookmark-list__btn:active {
+    border: 3px solid #000;
+    box-shadow: 5px 3px 8px #000;
+}
+
+.modal-btn {
+    background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)
+}
+
+.modal-btn {
+    margin: 5px 10px;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.modal-btn:hover {
+    cursor: pointer;
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.modal-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-list {
+    width: 500px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    color: #fff;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.modal-img {
+    width: 100%;
+    
+}
+
+.modal-title {
+    font-size: 25px;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.modal-text {
+    margin: 0;
+    padding:10px;
+    font-weight: 400;
+}
+
+.close-film {
+    position: absolute;
+    top: 10px;
+    right: calc(30%);
+    display: block;
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.close-film:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 426px){
+    .form__header {
+        flex-direction: column;
+    }
+    
+    .render {
+        flex-direction: column;
+    }
+    
+    .list {
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .list__item {
+        width: 100%;
+    }
+    
+    .list__img {
+        width: 100%;
+    }
+    
+    .bookmark-list {
+        width: 90%;
+        max-width: 390px;
+        padding: 0 5px;
+    }
+}
