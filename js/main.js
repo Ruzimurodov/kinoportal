@@ -39,7 +39,7 @@ function renderFilms (arr, element){
     modalBtn.setAttribute("class", "modal-btn");
     modalBtn.textContent = "More"
 
-    modalBtn.addEventListener("click", function (){
+    modalBtn.addEventListener("click", () => {
       if(!modalArr.includes(film.title)){
         modalArr.splice(0,1,film);
       }
